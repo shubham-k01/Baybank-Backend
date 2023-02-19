@@ -1,0 +1,10 @@
+1.DO not create env file as .env.local , create it as .env
+2. try catch blocks can be replaced by middlewares (done using asyncWrapper)
+3. When we implement errors and middlewares to handle them, as we are throwing the errors explicitly , we need to use express-async-errors or implement try catch blocks
+4. Custom defined middlewares and error handler middlewares should be placed at the last after all the routes and other middlewares have been mentioned in app.js
+5. there are 3 ways of validating the data: 
+--Mongoose validation
+--Joi package
+--Check in the controllers 
+When we check in the controllers , we throw an error , so we use express-async-error or asyncWrapper
+6. We want to check for the fields coming from  frontend in the controller if we have just implemented error handler for checking if error is instance of CustomEroor 
